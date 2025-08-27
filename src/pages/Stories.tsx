@@ -47,12 +47,13 @@ const stories = [
   }
 ];
 
+
 const moodColors = {
-  Inspiring: "bg-secondary-glow/20 text-secondary",
-  Funny: "bg-accent-glow/20 text-accent",
-  Dreamy: "bg-primary-glow/20 text-primary",
+  Inspiring: "bg-secondary-glow/20 text-secondary-foreground",
+  Funny: "bg-accent/30 text-accent-foreground",
+  Dreamy: "bg-primary-glow/20",
   Adventurous: "bg-destructive/20 text-destructive",
-  Magical: "bg-primary-glow/30 text-primary",
+  Magical: "bg-primary-glow/30",
   Mysterious: "bg-muted/50 text-muted-foreground"
 };
 
@@ -68,7 +69,7 @@ export default function Stories() {
           </h1>
         </div>
         <p className="text-lg lg:text-xl text-muted-foreground max-w-2xl mx-auto">
-          Perfect little adventures for when you want a quick dose of magic! Each story is a complete tale 
+          Perfect little adventures for when you want a quick dose of magic! Each story is a complete tale
           that you can enjoy in just a few minutes.
         </p>
       </div>
@@ -87,7 +88,7 @@ export default function Stories() {
                   <span>{story.readTime}</span>
                 </div>
               </div>
-              <CardTitle className="text-lg font-fredoka group-hover:text-primary transition-colors">
+              <CardTitle className="text-lg font-fredoka text-primary transition-colors">
                 {story.title}
               </CardTitle>
             </CardHeader>
@@ -95,7 +96,7 @@ export default function Stories() {
               <p className="text-muted-foreground text-sm leading-relaxed">
                 {story.description}
               </p>
-              
+
               <Button size="sm" className="w-full fairy-float">
                 <Sparkles className="mr-2 h-4 w-4" />
                 Read Story
@@ -115,7 +116,7 @@ export default function Stories() {
           <div className="max-w-2xl mx-auto space-y-4">
             <h3 className="text-xl font-semibold">"The Little Star That Couldn't Shine"</h3>
             <p className="text-lg opacity-90">
-              This week's featured story reminds us that everyone has their own special light to share with the world, 
+              This week's featured story reminds us that everyone has their own special light to share with the world,
               no matter how small they might feel.
             </p>
             <Button size="lg" variant="secondary" className="font-medium">

@@ -15,7 +15,7 @@ const books = [
     id: 2,
     title: "Princess of the Crystal Castle",
     description: "Follow Princess Aria on her quest to find the lost Crystal of Light and restore peace to her kingdom with the help of her brave dragon friend, Ember.",
-    readTime: "35 min read", 
+    readTime: "35 min read",
     chapters: 6,
     status: "Complete"
   },
@@ -41,7 +41,7 @@ export default function Books() {
           </h1>
         </div>
         <p className="text-lg lg:text-xl text-muted-foreground max-w-2xl mx-auto">
-          Here are my full-length stories filled with adventure, magic, and wonderful characters. 
+          Here are my full-length stories filled with adventure, magic, and wonderful characters.
           Each book is a complete journey waiting for you to explore!
         </p>
       </div>
@@ -52,11 +52,13 @@ export default function Books() {
           <Card key={book.id} className="fairy-float group hover:scale-105 transition-all duration-300">
             <CardHeader className="space-y-4">
               <div className="flex items-center justify-between">
-                <div className={`px-3 py-1 rounded-full text-xs font-medium ${
-                  book.status === 'Complete' 
-                    ? 'bg-secondary-glow/20 text-secondary' 
-                    : 'bg-accent-glow/20 text-accent'
-                }`}>
+                <div
+                  className={`px-3 py-1 rounded-full text-xs font-semibold
+    ${book.status === 'Complete'
+                      ? 'bg-green-100 text-green-700 border border-green-200'
+                      : 'bg-orange-100 text-orange-700 border border-orange-200'
+                    }`}
+                >
                   {book.status}
                 </div>
                 <div className="flex items-center gap-1 text-sm text-muted-foreground">
@@ -64,7 +66,7 @@ export default function Books() {
                   <span>{book.chapters} chapters</span>
                 </div>
               </div>
-              <CardTitle className="text-xl font-fredoka group-hover:text-primary transition-colors">
+              <CardTitle className="text-xl font-fredoka transition-colors">
                 {book.title}
               </CardTitle>
             </CardHeader>
@@ -72,7 +74,7 @@ export default function Books() {
               <p className="text-muted-foreground leading-relaxed">
                 {book.description}
               </p>
-              
+
               <div className="flex items-center justify-between pt-4">
                 <div className="flex items-center gap-2 text-sm text-muted-foreground">
                   <Clock className="h-4 w-4" />
