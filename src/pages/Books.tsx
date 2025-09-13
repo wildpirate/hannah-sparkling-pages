@@ -1,35 +1,14 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { BookOpen, Clock, Star } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
-const books = [
-  {
-    id: 1,
-    title: "The Magic Garden Adventure",
-    description: "Join Luna as she discovers a secret garden filled with talking flowers and magical creatures who need her help to save their home from the Shadow King.",
-    readTime: "45 min read",
-    chapters: 8,
-    status: "Complete"
-  },
-  {
-    id: 2,
-    title: "Princess of the Crystal Castle",
-    description: "Follow Princess Aria on her quest to find the lost Crystal of Light and restore peace to her kingdom with the help of her brave dragon friend, Ember.",
-    readTime: "35 min read",
-    chapters: 6,
-    status: "Complete"
-  },
-  {
-    id: 3,
-    title: "The Enchanted Forest Friends",
-    description: "When Maya gets lost in an enchanted forest, she meets amazing animal friends who teach her about friendship, courage, and believing in herself.",
-    readTime: "In progress",
-    chapters: 4,
-    status: "Writing"
-  }
-];
+// Books data will be loaded from translations
 
 export default function Books() {
+  const { t } = useTranslation();
+  const books = t('books.list', { returnObjects: true }) as any[];
+
   return (
     <div className="max-w-7xl mx-auto px-4 py-12 space-y-12">
       {/* Header */}
@@ -37,12 +16,11 @@ export default function Books() {
         <div className="flex items-center justify-center gap-2 mb-4">
           <BookOpen className="h-8 w-8 text-primary gentle-float" />
           <h1 className="text-4xl lg:text-5xl font-fredoka font-bold sparkle-text">
-            My Books
+            {t('books.title')}
           </h1>
         </div>
         <p className="text-lg lg:text-xl text-muted-foreground max-w-2xl mx-auto">
-          Here are my full-length stories filled with adventure, magic, and wonderful characters.
-          Each book is a complete journey waiting for you to explore!
+          {t('books.subtitle')}
         </p>
       </div>
 
@@ -59,11 +37,11 @@ export default function Books() {
                       : 'bg-orange-100 text-orange-700 border border-orange-200'
                     }`}
                 >
-                  {book.status}
+                  {t(`books.status.${book.status.toLowerCase()}`)}
                 </div>
                 <div className="flex items-center gap-1 text-sm text-muted-foreground">
                   <Star className="h-4 w-4 fill-current text-primary" />
-                  <span>{book.chapters} chapters</span>
+                  <span>{book.chapters} {t('books.chapters')}</span>
                 </div>
               </div>
               <CardTitle className="text-xl font-fredoka transition-colors">
@@ -81,7 +59,7 @@ export default function Books() {
                   <span>{book.readTime}</span>
                 </div>
                 <Button size="sm" className="fairy-float">
-                  {book.status === 'Complete' ? 'Read Now' : 'Preview'}
+                  {book.status === 'Complete' ? t('books.readNow') : t('books.preview')}
                 </Button>
               </div>
             </CardContent>
@@ -94,13 +72,13 @@ export default function Books() {
         <CardContent className="p-12 text-center space-y-4">
           <BookOpen className="h-16 w-16 text-muted-foreground mx-auto" />
           <h3 className="text-2xl font-fredoka font-semibold text-muted-foreground">
-            More Books Coming Soon!
+            {t('books.placeholder.title')}
           </h3>
           <p className="text-muted-foreground max-w-md mx-auto">
-            I'm always working on new stories and adventures. Check back soon for more magical tales!
+            {t('books.placeholder.description')}
           </p>
           <div className="text-sm text-muted-foreground">
-            <em>Here will be the book chapters and story content</em>
+            <em>{t('books.placeholder.note')}</em>
           </div>
         </CardContent>
       </Card>
