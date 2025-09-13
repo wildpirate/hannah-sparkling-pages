@@ -45,7 +45,7 @@ export default function NaszyjnikCzterechZywiolow() {
                         <button
                             key={chapter.id}
                             onClick={() => handleChapterClick(chapter.id)}
-                            className="w-full text-left p-4 bg-white border border-gray-200 rounded-lg hover:bg-gray-50 hover:border-gray-300 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                            className="fairy-float w-full text-left p-4 bg-white border border-gray-200 rounded-lg hover:bg-gray-50 hover:border-gray-300 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                         >
                             <div className="flex items-center justify-between">
                                 <span className="text-gray-800 font-medium">
