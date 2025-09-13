@@ -2,37 +2,14 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { BookOpen, Clock, Star } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import _books from "../books"
+import { useNavigate } from "react-router-dom";
 
-// Books data will be loaded from translations
+const books = Object.values(_books)
 
-const books = [
-  {
-    id: 1,
-    "title": "Przygoda w Magicznym Ogrodzie",
-    "description": "Dołącz do Luny, gdy odkrywa tajemny ogród wypełniony mówiącymi kwiatami i magicznymi stworzeniami, które potrzebują jej pomocy, aby uratować swój dom przed Królem Cieni.",
-    "readTime": "45 min czytania",
-    "chapters": 8,
-    "status": "complete"
-  },
-  {
-    id: 2,
-    "title": "Księżniczka z Kryształowego Zamku",
-    "description": "Podążaj za Księżniczką Arią w jej poszukiwaniach zaginionego Kryształu Światła i przywróć pokój w jej królestwie z pomocą jej odważnego przyjaciela smoka, Ember.",
-    "readTime": "35 min czytania",
-    "chapters": 6,
-    "status": "complete"
-  },
-  {
-    id: 3,
-    "title": "Przyjaciele z Zaklętego Lasu",
-    "description": "Gdy Maya gubi się w zaklętym lesie, spotyka niesamowitych przyjaciół zwierząt, którzy uczą ją o przyjaźni, odwadze i wierze w siebie.",
-    "readTime": "W trakcie",
-    "chapters": 4,
-    "status": "writing"
-  }
-]
 export default function Books() {
   const { t } = useTranslation();
+  const navigate = useNavigate();
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-12 space-y-12">
@@ -83,7 +60,7 @@ export default function Books() {
                   <Clock className="h-4 w-4" />
                   <span>{book.readTime}</span>
                 </div>
-                <Button size="sm" className="fairy-float">
+                <Button size="sm" className="fairy-float" onClick={() => navigate(`/books/${book.id}`)}>
                   {book.status === 'Complete' ? t('books.readNow') : t('books.preview')}
                 </Button>
               </div>

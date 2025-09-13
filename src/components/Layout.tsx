@@ -64,7 +64,9 @@ export function Layout({ children }: LayoutProps) {
             <nav className="flex-1 px-6 py-6 space-y-2">
               {navigation.map((item) => {
                 const Icon = item.icon;
-                const isActive = location.pathname === item.href;
+                const isActive =
+                  location.pathname === item.href ||
+                  location.pathname.startsWith(item.href + "/");
                 return (
                   <NavLink
                     key={item.nameKey}
