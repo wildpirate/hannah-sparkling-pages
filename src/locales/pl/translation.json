@@ -121,30 +121,7 @@
             "title": "Więcej Książek Już Wkrótce!",
             "description": "Zawsze pracuję nad nowymi historiami i przygodami. Sprawdź wkrótce po więcej magicznych opowieści!",
             "note": "Tutaj będą rozdziały książek i treść historii"
-        },
-        "list": [
-            {
-                "title": "Przygoda w Magicznym Ogrodzie",
-                "description": "Dołącz do Luny, gdy odkrywa tajemny ogród wypełniony mówiącymi kwiatami i magicznymi stworzeniami, które potrzebują jej pomocy, aby uratować swój dom przed Królem Cieni.",
-                "readTime": "45 min czytania",
-                "chapters": 8,
-                "status": "Ukończona"
-            },
-            {
-                "title": "Księżniczka z Kryształowego Zamku",
-                "description": "Podążaj za Księżniczką Arią w jej poszukiwaniach zaginionego Kryształu Światła i przywróć pokój w jej królestwie z pomocą jej odważnego przyjaciela smoka, Ember.",
-                "readTime": "35 min czytania",
-                "chapters": 6,
-                "status": "Ukończona"
-            },
-            {
-                "title": "Przyjaciele z Zaklętego Lasu",
-                "description": "Gdy Maya gubi się w zaklętym lesie, spotyka niesamowitych przyjaciół zwierząt, którzy uczą ją o przyjaźni, odwadze i wierze w siebie.",
-                "readTime": "W trakcie",
-                "chapters": 4,
-                "status": "W trakcie pisania"
-            }
-        ]
+        }
     },
     "stories": {
         "title": "Krótkie Opowiadania",
@@ -168,45 +145,7 @@
             "title": "Treść Opowiadań Już Wkrótce!",
             "description": "Ciężko pracuję nad ożywieniem tych magicznych opowieści. Treść każdego opowiadania będzie tutaj wkrótce!",
             "note": "Tutaj będzie treść opowiadania dla każdej historii"
-        },
-        "list": [
-            {
-                "title": "Mała Gwiazdka, Która Nie Mogła Świecić",
-                "description": "Wzruszająca opowieść o Stelli, małej gwiazdce, która myślała, że nie jest wystarczająco jasna, dopóki nie odkryła, że nawet najmniejsze światło może zrobić wielką różnicę.",
-                "readTime": "5 min czytania",
-                "mood": "Inspirujące"
-            },
-            {
-                "title": "Ciastko, Które Ożyło",
-                "description": "Gdy specjalny przepis babci idzie nie tak, piernikowe ciastko ożywa i wyrusza na słodką przygodę przez kuchnię.",
-                "readTime": "3 min czytania",
-                "mood": "Zabawne"
-            },
-            {
-                "title": "Tęczowy Most do Krainy Snów",
-                "description": "Podążaj za Miią, gdy każdej nocy przekracza magiczny tęczowy most, aby odwiedzić krainę snów i pomóc innym dzieciom mieć wspaniały sen.",
-                "readTime": "7 min czytania",
-                "mood": "Marzycielskie"
-            },
-            {
-                "title": "Smok, Który Bał Się Ognia",
-                "description": "Poznaj Puffa, młodego smoka, który boi się własnego ognistego oddechu i jak uczy się pokonywać swoje lęki z pomocą przyjaciół z lasu.",
-                "readTime": "6 min czytania",
-                "mood": "Przygodowe"
-            },
-            {
-                "title": "Magiczny Pędzel",
-                "description": "Gdy Lily znajduje tajemniczy pędzel w swoim pudełku na przybory artystyczne, wszystko, co maluje, ożywa, prowadząc do kolorowego chaosu i wspaniałych odkryć.",
-                "readTime": "4 min czytania",
-                "mood": "Magiczne"
-            },
-            {
-                "title": "Śpiewające Muszle",
-                "description": "Podczas przygody na plaży Emma odkrywa, że muszle nie tylko wydają dźwięki oceanu – śpiewają starożytne pieśni morza!",
-                "readTime": "5 min czytania",
-                "mood": "Tajemnicze"
-            }
-        ]
+        }
     },
     "notFound": {
         "title": "Ups! Strona nie została znaleziona",

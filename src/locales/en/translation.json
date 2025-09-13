@@ -121,30 +121,7 @@
             "title": "More Books Coming Soon!",
             "description": "I'm always working on new stories and adventures. Check back soon for more magical tales!",
             "note": "Here will be the book chapters and story content"
-        },
-        "list": [
-            {
-                "title": "The Magic Garden Adventure",
-                "description": "Join Luna as she discovers a secret garden filled with talking flowers and magical creatures who need her help to save their home from the Shadow King.",
-                "readTime": "45 min read",
-                "chapters": 8,
-                "status": "Complete"
-            },
-            {
-                "title": "Princess of the Crystal Castle",
-                "description": "Follow Princess Aria on her quest to find the lost Crystal of Light and restore peace to her kingdom with the help of her brave dragon friend, Ember.",
-                "readTime": "35 min read",
-                "chapters": 6,
-                "status": "Complete"
-            },
-            {
-                "title": "The Enchanted Forest Friends",
-                "description": "When Maya gets lost in an enchanted forest, she meets amazing animal friends who teach her about friendship, courage, and believing in herself.",
-                "readTime": "In progress",
-                "chapters": 4,
-                "status": "Writing"
-            }
-        ]
+        }
     },
     "stories": {
         "title": "Short Stories",
@@ -168,45 +145,7 @@
             "title": "Story Content Coming Soon!",
             "description": "I'm working hard on bringing these magical tales to life. Each story will have its full content here soon!",
             "note": "Here will be the story content for each tale"
-        },
-        "list": [
-            {
-                "title": "The Little Star That Couldn't Shine",
-                "description": "A heartwarming tale about Stella, a little star who thought she wasn't bright enough, until she discovered that even the smallest light can make a big difference.",
-                "readTime": "5 min read",
-                "mood": "Inspiring"
-            },
-            {
-                "title": "The Cookie That Came to Life",
-                "description": "When Grandma's special recipe goes wrong, a gingerbread cookie comes to life and embarks on a sweet adventure through the kitchen.",
-                "readTime": "3 min read",
-                "mood": "Funny"
-            },
-            {
-                "title": "The Rainbow Bridge to Dreamland",
-                "description": "Follow Mia as she crosses a magical rainbow bridge every night to visit the land of dreams and help other children have wonderful sleep.",
-                "readTime": "7 min read",
-                "mood": "Dreamy"
-            },
-            {
-                "title": "The Dragon Who Was Afraid of Fire",
-                "description": "Meet Puff, a young dragon who is scared of his own fire breath, and how he learns to overcome his fears with the help of his forest friends.",
-                "readTime": "6 min read",
-                "mood": "Adventurous"
-            },
-            {
-                "title": "The Magic Paintbrush",
-                "description": "When Lily finds a mysterious paintbrush in her art box, everything she paints comes to life, leading to colorful chaos and wonderful discoveries.",
-                "readTime": "4 min read",
-                "mood": "Magical"
-            },
-            {
-                "title": "The Singing Seashells",
-                "description": "On a beach adventure, Emma discovers that the seashells aren't just making ocean sounds – they're singing ancient songs of the sea!",
-                "readTime": "5 min read",
-                "mood": "Mysterious"
-            }
-        ]
+        }
     },
     "notFound": {
         "title": "Oops! Page not found",

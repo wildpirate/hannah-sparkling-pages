@@ -5,9 +5,34 @@ import { useTranslation } from "react-i18next";
 
 // Books data will be loaded from translations
 
+const books = [
+  {
+    id: 1,
+    "title": "Przygoda w Magicznym Ogrodzie",
+    "description": "Dołącz do Luny, gdy odkrywa tajemny ogród wypełniony mówiącymi kwiatami i magicznymi stworzeniami, które potrzebują jej pomocy, aby uratować swój dom przed Królem Cieni.",
+    "readTime": "45 min czytania",
+    "chapters": 8,
+    "status": "complete"
+  },
+  {
+    id: 2,
+    "title": "Księżniczka z Kryształowego Zamku",
+    "description": "Podążaj za Księżniczką Arią w jej poszukiwaniach zaginionego Kryształu Światła i przywróć pokój w jej królestwie z pomocą jej odważnego przyjaciela smoka, Ember.",
+    "readTime": "35 min czytania",
+    "chapters": 6,
+    "status": "complete"
+  },
+  {
+    id: 3,
+    "title": "Przyjaciele z Zaklętego Lasu",
+    "description": "Gdy Maya gubi się w zaklętym lesie, spotyka niesamowitych przyjaciół zwierząt, którzy uczą ją o przyjaźni, odwadze i wierze w siebie.",
+    "readTime": "W trakcie",
+    "chapters": 4,
+    "status": "writing"
+  }
+]
 export default function Books() {
   const { t } = useTranslation();
-  const books = t('books.list', { returnObjects: true }) as any[];
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-12 space-y-12">
@@ -32,12 +57,12 @@ export default function Books() {
               <div className="flex items-center justify-between">
                 <div
                   className={`px-3 py-1 rounded-full text-xs font-semibold
-    ${book.status === 'Complete'
+    ${book.status === 'complete'
                       ? 'bg-green-100 text-green-700 border border-green-200'
                       : 'bg-orange-100 text-orange-700 border border-orange-200'
                     }`}
                 >
-                  {t(`books.status.${book.status.toLowerCase()}`)}
+                  {t(`books.status.${book.status}`)}
                 </div>
                 <div className="flex items-center gap-1 text-sm text-muted-foreground">
                   <Star className="h-4 w-4 fill-current text-primary" />

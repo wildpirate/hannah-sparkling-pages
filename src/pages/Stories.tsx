@@ -7,17 +7,62 @@ import { useTranslation } from "react-i18next";
 
 
 const moodColors = {
-  Inspiring: "bg-secondary-glow/20 text-secondary-foreground",
-  Funny: "bg-accent/30 text-accent-foreground",
-  Dreamy: "bg-primary-glow/20",
-  Adventurous: "bg-destructive/20 text-destructive",
-  Magical: "bg-primary-glow/30",
-  Mysterious: "bg-muted/50 text-muted-foreground"
+  inspiring: "bg-secondary-glow/20 text-secondary-foreground",
+  funny: "bg-accent/30 text-accent-foreground",
+  dreamy: "bg-primary-glow/20",
+  adventurous: "bg-destructive/20 text-destructive",
+  magical: "bg-primary-glow/30",
+  mysterious: "bg-muted/50 text-muted-foreground"
 };
+
+
+const stories = [
+  {
+    "id": 1,
+    "title": "Mała Gwiazdka, Która Nie Mogła Świecić",
+    "description": "Wzruszająca opowieść o Stelli, małej gwiazdce, która myślała, że nie jest wystarczająco jasna, dopóki nie odkryła, że nawet najmniejsze światło może zrobić wielką różnicę.",
+    "readTime": "5 min czytania",
+    "mood": "inspiring"
+  },
+  {
+    "id": 2,
+    "title": "Ciastko, Które Ożyło",
+    "description": "Gdy specjalny przepis babci idzie nie tak, piernikowe ciastko ożywa i wyrusza na słodką przygodę przez kuchnię.",
+    "readTime": "3 min czytania",
+    "mood": "funny"
+  },
+  {
+    "id": 3,
+    "title": "Tęczowy Most do Krainy Snów",
+    "description": "Podążaj za Miią, gdy każdej nocy przekracza magiczny tęczowy most, aby odwiedzić krainę snów i pomóc innym dzieciom mieć wspaniały sen.",
+    "readTime": "7 min czytania",
+    "mood": "dreamy"
+  },
+  {
+    "id": 4,
+    "title": "Smok, Który Bał Się Ognia",
+    "description": "Poznaj Puffa, młodego smoka, który boi się własnego ognistego oddechu i jak uczy się pokonywać swoje lęki z pomocą przyjaciół z lasu.",
+    "readTime": "6 min czytania",
+    "mood": "adventurous"
+  },
+  {
+    "id": 5,
+    "title": "Magiczny Pędzel",
+    "description": "Gdy Lily znajduje tajemniczy pędzel w swoim pudełku na przybory artystyczne, wszystko, co maluje, ożywa, prowadząc do kolorowego chaosu i wspaniałych odkryć.",
+    "readTime": "4 min czytania",
+    "mood": "magical"
+  },
+  {
+    "id": 6,
+    "title": "Śpiewające Muszle",
+    "description": "Podczas przygody na plaży Emma odkrywa, że muszle nie tylko wydają dźwięki oceanu – śpiewają starożytne pieśni morza!",
+    "readTime": "5 min czytania",
+    "mood": "mysterious"
+  }
+]
 
 export default function Stories() {
   const { t } = useTranslation();
-  const stories = t('stories.list', { returnObjects: true }) as any[];
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-12 space-y-12">
