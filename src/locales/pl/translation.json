@@ -1,0 +1,224 @@
+{
+    "navigation": {
+        "home": "Strona główna",
+        "books": "Książki",
+        "stories": "Opowiadania",
+        "about": "O mnie"
+    },
+    "header": {
+        "title": "Książki Hani",
+        "subtitle": "Młoda Autorka"
+    },
+    "footer": {
+        "copyright": "© 2025 Hania – Wszystkie prawa zastrzeżone"
+    },
+    "sidebar": {
+        "quote": "Każda historia to nowa przygoda!"
+    },
+    "home": {
+        "hero": {
+            "title": "Witaj w moim\n<1>magicznym</1> świecie opowieści!",
+            "subtitle": "Cześć! Jestem Hania i uwielbiam tworzyć niesamowite przygody i opowieści, które zabiorą cię w cudowne miejsca. Przeżyj moją kolekcję książek i krótkich opowiadań!",
+            "readBooks": "Czytaj Moje Książki",
+            "shortStories": "Krótkie Opowiadania"
+        },
+        "features": {
+            "title": "Co tu znajdziesz",
+            "subtitle": "Zanurz się w świecie wyobraźni, gdzie każda strona przynosi nowe przygody i ożywia wspaniałe postacie!",
+            "fullBooks": {
+                "title": "Pełne Książki",
+                "description": "Kompletne historie z niesamowitymi postaciami i ekscytującymi fabułami, które sprawią, że będziesz czytać do końca!",
+                "button": "Zobacz Książki"
+            },
+            "shortStories": {
+                "title": "Krótkie Opowiadania",
+                "description": "Szybkie przygody i magiczne opowieści idealne na moment, gdy chcesz cudowną historię w zaledwie kilka minut!",
+                "button": "Czytaj Opowiadania"
+            },
+            "about": {
+                "title": "O Mnie",
+                "description": "Dowiedz się więcej o mnie, mojej miłości do pisania i tym, co inspiruje mnie do tworzenia tych magicznych opowieści!",
+                "button": "Poznaj Hanię"
+            }
+        },
+        "cta": {
+            "title": "Gotowy na przygodę?",
+            "subtitle": "Rozpocznij swoją podróż przez moje historie już dziś i odkryj magię, która czeka w każdym rozdziale!",
+            "startReading": "Zacznij Czytać",
+            "learnMore": "Dowiedz Się Więcej"
+        }
+    },
+    "about": {
+        "title": "O Mnie",
+        "subtitle": "Cześć! Pozwól, że opowiem ci trochę o sobie i mojej miłości do tworzenia magicznych opowieści.",
+        "introduction": {
+            "title": "Cześć! Jestem Hania",
+            "subtitle": "9-letnia autorka i marzycielka",
+            "description1": "Jestem 9-letnią dziewczynką, która absolutnie <1>uwielbia</1> tworzyć historie! Od kiedy nauczyłam się pisać, wypełniam zeszyty opowieściami o magii, przygodach i przyjaźni.",
+            "description2": "Moja wyobraźnia jest pełna mówiących zwierząt, odważnych księżniczek, magicznych ogrodów i cudownych miejsc, gdzie wszystko jest możliwe. Wierzę, że każda historia ma moc sprawienia, że ktoś się uśmiechnie, będzie marzyć lub poczuje się odważniejszy."
+        },
+        "interests": {
+            "writing": {
+                "title": "Moje Pisanie",
+                "description": "Uwielbiam pisać o odważnych postaciach, które przeżywają niesamowite przygody. Moje historie zwykle mają szczęśliwe zakończenia, bo myślę, że świat potrzebuje więcej radości i magii!"
+            },
+            "inspiration": {
+                "title": "Moja Inspiracja",
+                "description": "Pomysły czerpię zewsząd - z moich snów, spacerów po parku, zabawy ze zwierzętami i czytania innych niesamowitych książek. Czasami piszę historie o moich własnych przygodach!"
+            }
+        },
+        "funFacts": {
+            "title": "Zabawne Fakty O Mnie",
+            "favoriteGenre": {
+                "title": "Ulubiony Gatunek",
+                "description": "Fantasy i magiczne przygody"
+            },
+            "writingMusic": {
+                "title": "Muzyka Do Pisania",
+                "description": "Uwielbiam słuchać ścieżek dźwiękowych z bajek"
+            },
+            "favoriteCharacters": {
+                "title": "Ulubione Postacie",
+                "description": "Odważne księżniczki i mówiące zwierzęta"
+            },
+            "readingTime": {
+                "title": "Czas Czytania",
+                "description": "Codziennie przed snem"
+            },
+            "dreamGoal": {
+                "title": "Marzenie",
+                "description": "Kiedyś wydać prawdziwą książkę!"
+            },
+            "hobbies": {
+                "title": "Hobby",
+                "description": "Rysowanie postaci z moich historii"
+            }
+        },
+        "message": {
+            "title": "Wiadomość Dla Ciebie",
+            "text1": "Dziękuję za odwiedzenie mojej strony i czytanie moich historii! Mam nadzieję, że przynoszą ci trochę magii i szczęścia w ciągu dnia. Pamiętaj, nigdy nie jesteś za młody ani za stary, żeby wierzyć w magię i podążać za marzeniami.",
+            "text2": "Czytaj dalej, marz dalej i nigdy nie przestawaj wierzyć w siebie! ✨"
+        },
+        "placeholder": {
+            "title": "Więcej O Mnie Już Wkrótce!",
+            "description": "Pracuję nad dodaniem więcej zdjęć, rysunków moich postaci i historii o tym, jak zaczęłam pisać!",
+            "note": "Tutaj będzie więcej osobistej treści i zdjęć"
+        }
+    },
+    "books": {
+        "title": "Moje Książki",
+        "subtitle": "Oto moje pełne historie wypełnione przygodami, magią i wspaniałymi postaciami. Każda książka to kompletna podróż czekająca na twoje odkrycie!",
+        "status": {
+            "complete": "Ukończona",
+            "writing": "W trakcie pisania"
+        },
+        "chapters": "rozdziały",
+        "readTime": "min czytania",
+        "inProgress": "W trakcie",
+        "readNow": "Czytaj Teraz",
+        "preview": "Podgląd",
+        "placeholder": {
+            "title": "Więcej Książek Już Wkrótce!",
+            "description": "Zawsze pracuję nad nowymi historiami i przygodami. Sprawdź wkrótce po więcej magicznych opowieści!",
+            "note": "Tutaj będą rozdziały książek i treść historii"
+        },
+        "list": [
+            {
+                "title": "Przygoda w Magicznym Ogrodzie",
+                "description": "Dołącz do Luny, gdy odkrywa tajemny ogród wypełniony mówiącymi kwiatami i magicznymi stworzeniami, które potrzebują jej pomocy, aby uratować swój dom przed Królem Cieni.",
+                "readTime": "45 min czytania",
+                "chapters": 8,
+                "status": "Ukończona"
+            },
+            {
+                "title": "Księżniczka z Kryształowego Zamku",
+                "description": "Podążaj za Księżniczką Arią w jej poszukiwaniach zaginionego Kryształu Światła i przywróć pokój w jej królestwie z pomocą jej odważnego przyjaciela smoka, Ember.",
+                "readTime": "35 min czytania",
+                "chapters": 6,
+                "status": "Ukończona"
+            },
+            {
+                "title": "Przyjaciele z Zaklętego Lasu",
+                "description": "Gdy Maya gubi się w zaklętym lesie, spotyka niesamowitych przyjaciół zwierząt, którzy uczą ją o przyjaźni, odwadze i wierze w siebie.",
+                "readTime": "W trakcie",
+                "chapters": 4,
+                "status": "W trakcie pisania"
+            }
+        ]
+    },
+    "stories": {
+        "title": "Krótkie Opowiadania",
+        "subtitle": "Idealne małe przygody na moment, gdy chcesz szybką dawkę magii! Każde opowiadanie to kompletna historia, którą możesz cieszyć się w zaledwie kilka minut.",
+        "mood": {
+            "inspiring": "Inspirujące",
+            "funny": "Zabawne",
+            "dreamy": "Marzycielskie",
+            "adventurous": "Przygodowe",
+            "magical": "Magiczne",
+            "mysterious": "Tajemnicze"
+        },
+        "readStory": "Czytaj Opowiadanie",
+        "featured": {
+            "title": "Opowiadanie Tygodnia",
+            "storyTitle": "Mała Gwiazdka, Która Nie Mogła Świecić",
+            "description": "To tygodniowe wyróżnione opowiadanie przypomina nam, że każdy ma swoje własne specjalne światło do podzielenia się ze światem, niezależnie od tego, jak mały może się czuć.",
+            "button": "Czytaj Wyróżnione Opowiadanie"
+        },
+        "placeholder": {
+            "title": "Treść Opowiadań Już Wkrótce!",
+            "description": "Ciężko pracuję nad ożywieniem tych magicznych opowieści. Treść każdego opowiadania będzie tutaj wkrótce!",
+            "note": "Tutaj będzie treść opowiadania dla każdej historii"
+        },
+        "list": [
+            {
+                "title": "Mała Gwiazdka, Która Nie Mogła Świecić",
+                "description": "Wzruszająca opowieść o Stelli, małej gwiazdce, która myślała, że nie jest wystarczająco jasna, dopóki nie odkryła, że nawet najmniejsze światło może zrobić wielką różnicę.",
+                "readTime": "5 min czytania",
+                "mood": "Inspirujące"
+            },
+            {
+                "title": "Ciastko, Które Ożyło",
+                "description": "Gdy specjalny przepis babci idzie nie tak, piernikowe ciastko ożywa i wyrusza na słodką przygodę przez kuchnię.",
+                "readTime": "3 min czytania",
+                "mood": "Zabawne"
+            },
+            {
+                "title": "Tęczowy Most do Krainy Snów",
+                "description": "Podążaj za Miią, gdy każdej nocy przekracza magiczny tęczowy most, aby odwiedzić krainę snów i pomóc innym dzieciom mieć wspaniały sen.",
+                "readTime": "7 min czytania",
+                "mood": "Marzycielskie"
+            },
+            {
+                "title": "Smok, Który Bał Się Ognia",
+                "description": "Poznaj Puffa, młodego smoka, który boi się własnego ognistego oddechu i jak uczy się pokonywać swoje lęki z pomocą przyjaciół z lasu.",
+                "readTime": "6 min czytania",
+                "mood": "Przygodowe"
+            },
+            {
+                "title": "Magiczny Pędzel",
+                "description": "Gdy Lily znajduje tajemniczy pędzel w swoim pudełku na przybory artystyczne, wszystko, co maluje, ożywa, prowadząc do kolorowego chaosu i wspaniałych odkryć.",
+                "readTime": "4 min czytania",
+                "mood": "Magiczne"
+            },
+            {
+                "title": "Śpiewające Muszle",
+                "description": "Podczas przygody na plaży Emma odkrywa, że muszle nie tylko wydają dźwięki oceanu – śpiewają starożytne pieśni morza!",
+                "readTime": "5 min czytania",
+                "mood": "Tajemnicze"
+            }
+        ]
+    },
+    "notFound": {
+        "title": "Ups! Strona nie została znaleziona",
+        "description": "Wygląda na to, że ta magiczna strona zniknęła! Zabierzmy cię z powrotem do bezpiecznego miejsca.",
+        "backToHome": "Powrót do Strony Głównej",
+        "goBack": "Wróć"
+    },
+    "book": {
+        "hello": "cześć"
+    },
+    "language": {
+        "en": "English",
+        "pl": "Polski"
+    }
+}

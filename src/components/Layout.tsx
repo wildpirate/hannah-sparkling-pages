@@ -2,12 +2,14 @@ import { useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import { Book, Home, PenTool, Heart, Menu, X, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useTranslation } from "react-i18next";
+import { LanguageSwitcher } from "./LanguageSwitcher";
 
 const navigation = [
-  { name: "Home", href: "/", icon: Home },
-  { name: "Books", href: "/books", icon: Book },
-  { name: "Stories", href: "/stories", icon: PenTool },
-  { name: "About me", href: "/about", icon: Heart },
+  { nameKey: "navigation.home", href: "/", icon: Home },
+  { nameKey: "navigation.books", href: "/books", icon: Book },
+  { nameKey: "navigation.stories", href: "/stories", icon: PenTool },
+  { nameKey: "navigation.about", href: "/about", icon: Heart },
 ];
 
 interface LayoutProps {
@@ -17,6 +19,7 @@ interface LayoutProps {
 export function Layout({ children }: LayoutProps) {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const location = useLocation();
+  const { t } = useTranslation();
 
   return (
     <div className="min-h-screen bg-background">
@@ -35,13 +38,16 @@ export function Layout({ children }: LayoutProps) {
             <div className="flex items-center gap-2">
               <Sparkles className="h-6 w-6 text-primary gentle-float" />
               <h1 className="text-2xl lg:text-3xl font-fredoka font-bold sparkle-text">
-                Zuzia's Books
+                {t('header.title')}
               </h1>
             </div>
           </div>
-          <div className="hidden lg:flex items-center gap-2">
-            <Sparkles className="h-4 w-4 text-accent" />
-            <span className="text-sm text-muted-foreground font-medium">Young Author</span>
+          <div className="hidden lg:flex items-center gap-4">
+            <div className="flex items-center gap-2">
+              <Sparkles className="h-4 w-4 text-accent" />
+              <span className="text-sm text-muted-foreground font-medium">{t('header.subtitle')}</span>
+            </div>
+            <LanguageSwitcher />
           </div>
         </div>
       </header>
@@ -61,31 +67,30 @@ export function Layout({ children }: LayoutProps) {
                 const isActive = location.pathname === item.href;
                 return (
                   <NavLink
-                    key={item.name}
+                    key={item.nameKey}
                     to={item.href}
                     className={`
                       flex items-center gap-3 px-4 py-3 rounded-lg text-sm font-medium transition-all duration-200 fairy-float
-                      ${
-                        isActive
-                          ? "bg-primary text-primary-foreground shadow-lg"
-                          : "text-muted-foreground hover:text-foreground hover:bg-muted"
+                      ${isActive
+                        ? "bg-primary text-primary-foreground shadow-lg"
+                        : "text-muted-foreground hover:text-foreground hover:bg-muted"
                       }
                     `}
                     onClick={() => setSidebarOpen(false)}
                   >
                     <Icon className="h-5 w-5" />
-                    {item.name}
+                    {t(item.nameKey)}
                   </NavLink>
                 );
               })}
             </nav>
-            
+
             {/* Decorative element */}
             <div className="px-6 py-4">
               <div className="bg-gradient-to-r from-primary-glow/20 to-secondary-glow/20 rounded-lg p-4 text-center">
                 <Sparkles className="h-8 w-8 text-primary mx-auto mb-2 gentle-float" />
                 <p className="text-xs text-muted-foreground font-medium">
-                  "Every story is a new adventure!"
+                  "{t('sidebar.quote')}"
                 </p>
               </div>
             </div>
@@ -113,7 +118,7 @@ export function Layout({ children }: LayoutProps) {
         <div className="max-w-7xl mx-auto px-4 py-6">
           <div className="flex items-center justify-center gap-2 text-sm text-muted-foreground">
             <Sparkles className="h-4 w-4 text-primary" />
-            <span>© 2025 Zuzia – All rights reserved</span>
+            <span>{t('footer.copyright')}</span>
             <Sparkles className="h-4 w-4 text-primary" />
           </div>
         </div>
