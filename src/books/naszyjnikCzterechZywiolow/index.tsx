@@ -1,10 +1,12 @@
 import { meta } from "./meta"
 import cover from "./cover.png"
+import { useNavigate, useParams } from "react-router-dom"
 
 export default function NaszyjnikCzterechZywiolow() {
+    const navigate = useNavigate();
+    const { bookId } = useParams();
     const handleChapterClick = (chapterId: number) => {
-        // TODO: Implement navigation to chapter
-        console.log(`Navigate to chapter ${chapterId}`)
+        navigate(`/books/${bookId}/${chapterId}`)
     }
 
     return (
@@ -41,7 +43,7 @@ export default function NaszyjnikCzterechZywiolow() {
                     Spis treści
                 </h2>
                 <div className="space-y-3">
-                    {meta.chaptersList.map((chapter) => (
+                    {Object.values(meta.chapters).map((chapter) => (
                         <button
                             key={chapter.id}
                             onClick={() => handleChapterClick(chapter.id)}

@@ -43,7 +43,7 @@ export default function Books() {
                 </div>
                 <div className="flex items-center gap-1 text-sm text-muted-foreground">
                   <Star className="h-4 w-4 fill-current text-primary" />
-                  <span>{book.chapters} {t('books.chapters')}</span>
+                  <span>{book.chaptersCount} {t('books.chapters')}</span>
                 </div>
               </div>
               <CardTitle className="text-xl font-fredoka transition-colors">
