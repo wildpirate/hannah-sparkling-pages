@@ -11,6 +11,7 @@ import About from "./pages/About";
 import NotFound from "./pages/NotFound";
 import Book from "./pages/Book";
 import Chapter from "./pages/Chapter";
+import BookComponent from "./components/Book";
 
 const queryClient = new QueryClient();
 
@@ -25,7 +26,10 @@ const App = () => (
             <Route path="/" element={<Home />} />
             <Route path="/books" element={<Books />} />
             <Route path="/books/:bookId" element={<Book />} />
-            <Route path="/books/:bookId/:chapterId" element={<Chapter />} />
+            <Route
+              path="/books/:bookId/:chapterId"
+              element={<BookComponent />}
+            />
             <Route path="/stories" element={<Stories />} />
             <Route path="/about" element={<About />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
