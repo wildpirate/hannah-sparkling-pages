@@ -1,6 +1,7 @@
 type ContentBlock = {
   type: string;
-  text: string;
+  text?: string;
+  img?: string;
 };
 
 type PaginatedContent = Record<number, ContentBlock[]>;
@@ -40,10 +41,22 @@ function getConfig(type: string): TypeConfig {
   return TYPE_CONFIG[type] ?? TYPE_CONFIG.default;
 }
 
+// NEW
+function isImageBlock(block: ContentBlock) {
+  return block.type === "ilustration" || block.type === "illustration";
+}
+
 function estimateBlockCost(block: ContentBlock) {
+  if (isImageBlock(block)) {
+    return PAGE_WEIGHT;
+  }
+
   const config = getConfig(block.type);
 
-  const estimatedLines = Math.ceil(block.text.length / config.charsPerLine);
+  const hasText = typeof block.text === "string" && block.text.length > 0;
+  const estimatedLines = hasText
+    ? Math.ceil(block.text.length / config.charsPerLine)
+    : 1;
 
   return estimatedLines * config.lineWeight + config.blockSpacing;
 }
@@ -58,15 +71,37 @@ export function parsePaginatedContent(
   let currentWeight = 0;
   let currentBlocks: ContentBlock[] = [];
 
+  // NEW
+  const pushCurrentPage = () => {
+    if (currentBlocks.length > 0) {
+      pages[page] = currentBlocks;
+      page++;
+      currentBlocks = [];
+      currentWeight = 0;
+    }
+  };
+
   for (let i = 0; i < content.length; i++) {
     const block = content[i];
+
+    // NEW: image always gets its own page
+    if (isImageBlock(block)) {
+      pushCurrentPage();
+      pages[page] = [block];
+      page++;
+      currentBlocks = [];
+      currentWeight = 0;
+      continue;
+    }
+
     const cost = estimateBlockCost(block);
 
     const nextBlock = content[i + 1];
 
     // prevent titles from being orphaned
     const combinedCost =
-      block.type === "title" && nextBlock
+      // NEW: avoid pairing title with image block
+      block.type === "title" && nextBlock && !isImageBlock(nextBlock)
         ? cost + estimateBlockCost(nextBlock)
         : cost;
 

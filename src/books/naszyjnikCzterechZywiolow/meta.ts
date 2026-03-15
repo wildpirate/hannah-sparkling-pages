@@ -1,5 +1,7 @@
 import Book from "@/components/Book";
-import chapter1 from "./Chapters/chapter1.json";
+import { chapter1 } from "./Chapters/chapter1";
+import { chapter2 } from "./Chapters/chapter2";
+import { chapter3 } from "./Chapters/chapter3";
 
 export const meta = {
   id: "naszyjnik-czterech-zywiolow",
@@ -15,8 +17,18 @@ export const meta = {
       Component: Book,
       chapter: chapter1,
     },
-    // 2: { "id": 2, "title": "Rozdział 2: Pierwsze spotkanie z magią" },
-    // 3: { "id": 3, "title": "Rozdział 3: Podróż do krainy żywiołów" },
+    2: {
+      id: 2,
+      title: "Rozdział 2: Niespotykane zjawisko",
+      Component: Book,
+      chapter: chapter2,
+    },
+    3: {
+      id: 3,
+      title: "Rozdział 3: Magia to nie przelewki",
+      Component: Book,
+      chapter: chapter3,
+    },
     // 4: { "id": 4, "title": "Rozdział 4: Spotkanie z opiekunami" },
     // 5: { "id": 5, "title": "Rozdział 5: Próba sił" },
     // 6: { "id": 6, "title": "Rozdział 6: Powrót do domu" }
