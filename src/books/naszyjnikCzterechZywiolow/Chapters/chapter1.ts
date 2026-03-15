@@ -3,7 +3,7 @@ import img from "@/assets/naszyjnik-czterech-zywiolow/chapter1-1.png";
 export const chapter1 = [
   {
     type: "title",
-    text: "Rozdział 1: Bla bla naszyjnik",
+    text: "Rozdział 1: Szafir",
   },
   {
     type: "paragraph",
